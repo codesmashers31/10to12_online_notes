@@ -1,0 +1,66 @@
+
+
+.parent-flex{
+/* This is for child */
+display: flex;
+justify-content: center;
+align-items: center;
+/* This is for parent */
+height: 600px;
+background-color: aqua;
+
+}
+
+.child-flex{
+/* Child div */
+background-color: black;
+/* child content */
+color: white;
+/* Child div */
+width: 200px;
+height: 200px;
+/* child content */
+padding: 10px;
+/* child content */
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 20px;
+font-weight: bolder;
+font-size: 25px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+
+
+.parent{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 10px;
+}
+
+
+.child{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.doubtflex{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    background-color: chartreuse;
+    height: 800px;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}

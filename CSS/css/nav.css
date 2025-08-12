@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.parent-of-amazon{
+    background-color: rgb(2, 2, 2);
+    color: rgb(3, 3, 3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: -9px -16px 8px 18px #8a8484;
+    position: sticky;
+    
+    
+}
+
+.logo img{
+    width: 140px;
+    background: white;
+}
+
+
+.nav-link{
+
+    display: flex;
+    gap: 30px;
+    
+}
+
+.nav-link a{
+
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+
+
+.main-banner{
+    background-color: beige;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.main-banner h1{
+
+    margin-top: 50px;
+    font-size: 50px;
+    height: 30px;
+    
+}
+.main-banner p{
+
+padding: 10px;
+    
+    
+}
+
+.btn{
+    width: 150px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color:black ;
+    color: white;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 0px 20px black ; */
+}
+
+
+
+.parent-box{
+
+display: flex;
+padding: 40px;
+justify-content: center; 
+flex-wrap:wrap ;
+align-content: center;
+position: sticky;
+top: 60px;
+
+}
+
+.parent-box img{
+
+width: 200px;
+border-radius: 15px;
+
+
+}
+
+.parent-box p{
+
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.link a{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+}
