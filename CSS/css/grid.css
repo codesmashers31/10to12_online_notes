@@ -27,3 +27,19 @@
     padding: 20px;
 }
 
+
+.boxcenter{
+    display: grid;
+    place-items: center;
+    background-color: aqua;
+    height: 100vh;
+}
+
+
+.box{
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
