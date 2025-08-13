@@ -1,0 +1,29 @@
+.main{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: skyblue;
+}
+
+
+.container{
+    display: grid;
+    background-color: black;
+    color: white;
+    grid-template-columns: 1fr 2fr 1fr; /*100%;*/
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+    /* grid-template-rows: 100px 100px; */
+}
+
+
+.idems{
+
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
