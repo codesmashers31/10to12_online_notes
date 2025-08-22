@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Animation Examples</title>
+ <link rel="stylesheet" href="animation.css">
+</head>
+<body>
+
+  <section>
+    <h2>1. Button Hover Animation</h2>
+    <button class="btn">Hover Me</button>
+  </section>
+
+  <section>
+    <h2>2. Card Hover Animation</h2>
+    <div class="card"></div>
+  </section>
+
+  <section>
+    <h2>3. Text Animation</h2>
+    <p class="text-anim">Hover over this text</p>
+  </section>
+
+  <section>
+    <h2>4. Image Hover Animation</h2>
+    <div class="img-box">
+      <img src="https://via.placeholder.com/250" alt="Sample" />
+    </div>
+  </section>
+
+  <section>
+    <h2>5. Loader Animation</h2>
+    <div class="loader"></div>
+  </section>
+
+  <section>
+    <h2>6. Bouncing Box Animation</h2>
+    <div class="bounce"></div>
+  </section>
+
+  <section>
+    <h2>7. Accordion (Click to Expand)</h2>
+    <button onclick="toggleAccordion()">Toggle Accordion</button>
+    <div id="accordion" class="accordion">
+      <p>This is the accordion content</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>8. Progress Bar Animation</h2>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+  </section>
+
+  <script>
+    function toggleAccordion() {
+      document.getElementById("accordion").classList.toggle("open");
+    }
+  </script>
+</body>
+</html>
