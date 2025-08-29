@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Button Intactions -->
+     <section class="d-flex justify-content-center p-5">
+        <button class="btn btn-info rounded-pill" data-bs-toggle="modal" data-bs-target="#registermodal">Register Modal</button>
+     </section>
+    <!-- Modal activate parent -->
+     <div class="modal fade" id="registermodal" tabindex="-1" aria-labelledby="#registertitle" aria-hidden="true">
+    <!--Modal Conent  -->
+    <div class="modal-dialog">
+    <!-- Modal Content -->
+     <div class="modal-content">
+   <!-- modal Title header -->
+    <div class="modal-header">   
+     <!-- Heading -->
+    <h3 class="modal-title" id="registertitle">Register</h3>
+    <!-- Close Button -->
+     <button class="close" data-bs-dismiss="modal" aria-label="close"><span aria-hidden="true">X</span></button>
+    </div>
+     <!-- form or other conent -->
+    <!-- modal body -->
+     <form action="">
+        
+     <div class="modal-body">
+        <label for="" class="">Enter the name</label>
+         <input type="text" placeholder="Enter the name"><br>
+           <label for="" class="">Enter the Password</label>
+         <input type="password" placeholder="Enter the Password">
+     </div>
+  
+    <!-- modal Footer -->
+     <div class="modal-footer">
+    <!-- Submit & close button -->
+     <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+     <button class="btn btn-primary">Register</button>
+     </div>
+     </form>
+     </div>
+ 
+    </div>
+
+     </div>
+     
+
+
+
+     <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/cards/2024-motogp-race-bikes.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/cards/download.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/cards/Yamaha-M1.avif" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+     </section>
+
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+</body>
+</html>
