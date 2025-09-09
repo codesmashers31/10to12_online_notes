@@ -1,6 +1,6 @@
 -- SET SQL_SAFE_UPDATES = 0; OFF
 -- Insert Syntax
--- INSERT INTO Table name (coulmn name) values (values);
+-- INSERT INTO Table name (coulmn names saparated by ,) values (values(data type saparated by ,));
 -- UPDATE Syntax
 -- UPDATE table name set coulumn name = updatedvalue where condition primary value = same value
 
@@ -11,3 +11,4 @@
 -- UPDATE staff set deprt_code = 500 where departmentname = "IT";
 
 -- delete from staff where dept_id = 5;
+
