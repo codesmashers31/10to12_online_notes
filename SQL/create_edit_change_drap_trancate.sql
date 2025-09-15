@@ -1,33 +1,38 @@
-use teashop;
+create database emprecords;
 
+use emprecords;
 
-create table  department (
-dept_id int primary key auto_increment,
-dept_name varchar(30) not null
+-- Department Table
+CREATE TABLE Department (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(50)
 );
 
-create table employees (
-emp_id int primary key auto_increment,
-emp_name VARCHAR(200) NOT NULL,
-emp_city VARCHAR(20),
-emp_salary int,
-emp_mobile int,
-date_of_join date,
-depart_id int,
-constraint fk_dept foreign key (depart_id) references staff(dept_id)
+INSERT INTO Department VALUES
+(1, 'HR'),
+(2, 'IT'),
+(3, 'Finance');
+
+-- Employees Table
+CREATE TABLE Employees (
+    id INT PRIMARY KEY auto_increment,
+    emp_id INT unique,
+    emp_name VARCHAR(50),
+    salary DECIMAL(10,2),
+    dept_id INT,
+    FOREIGN KEY (dept_id) REFERENCES Department(dept_id)
 );
 
--- New Column Added-- 
-alter table department ADD deprt_code int;
--- Table name change
-alter table department rename to staff;
--- Table column name change
-alter table staff rename column dept_name to departmentname;
--- Modify the datatype
-ALTER TABLE staff MODIFY departmentname VARCHAR(200);   
+INSERT INTO Employees (emp_id,emp_name,salary,dept_id)VALUES
+(101, 'Ravi', 50000, 2),
+(102, 'Priya', 60000, 1),
+(103, 'Kumar', 45000, 3),
+(104, 'John', 30000, NULL);
 
 
-drop table employees;
+
+select * from Employees;
+
 
 
 
