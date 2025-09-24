@@ -47,18 +47,35 @@
 
     //  5! - 5*4*3*2*1 - 120
 
-    let n = 10;
-    let fact = 1;
-    for(let a=1;a<=n;a++){
+    // let n = 10;
+    // let fact = 1;
+    // for(let a=1;a<=n;a++){
 
-        //document.write(a);
-        fact = fact * a;
+    //     //document.write(a);
+    //     fact = fact * a;
 
         
+    // }
+
+
+    // document.write(`Factrorical of  ${n} is ${fact}`)
+
+
+
+    // 0,1,1,2,3,5,8,13,21
+
+
+    
+
+    n=10
+    a=0,b=1
+    document.write("Fibonacci series: ")
+    for(let i=1;i<=n;i++){
+         document.write(a + " ")
+         let next = a+b;
+         a=b;
+         b=next;
     }
-
-
-    document.write(`Factrorical of  ${n} is ${fact}`)
 
 
     </script>
