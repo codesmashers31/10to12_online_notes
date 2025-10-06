@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+
+    <div>
+        <form id="myform"> 
+        
+            
+            
+            <input type="email"  id="email" placeholder="Enter the valid Email id">
+            <input type="password" placeholder="Enter the Password" id="password" />
+            <input type="submit" value="Register">
+
+        </form>
+    </div>
+    
+
+
+
+    <script>
+        const myform = document.getElementById("myform");
+
+        myform.addEventListener('submit',(e)=>{
+              e.preventDefault();
+      const password = document.getElementById("password").value;
+      const email = document.getElementById("email").value;
+       const datas = localStorage.getItem("userdata");
+
+       const newdatas = JSON.parse(datas);
+
+       if(email===newdatas.email && password===newdatas.password){
+         window.location.href = "dashboard.html"
+         myform.reset();
+       }else{
+        alert('something error')
+       }
+
+    //    console.log('local daat',datas);
+    //    console.log('obj',newdatas);
+       
+       
+
+
+        })
+    </script>
+</body>
+</html>

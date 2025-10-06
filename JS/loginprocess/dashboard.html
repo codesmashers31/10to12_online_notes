@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    
+<div>
+  <p id="data">
+
+  </p>
+</div>
+
+
+
+
+<script>
+    const datas = localStorage.getItem("userdata");
+    const changedata = JSON.parse(datas);
+    const data = document.getElementById("data")
+    data.innerText = `Username : ${changedata.username},  Email : ${changedata.email}`;
+
+    // if(changedata){
+    //     alert('Valid user only see the dashboard')
+    //     window.location.href = "login.html"
+    // }
+</script>
+</body>
+</html>

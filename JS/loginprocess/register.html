@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+
+
+    <div>
+        <form id="myform"> 
+        
+            <input type="text" placeholder="Enter the Name" id="username" />
+            <input type="password" placeholder="Enter the Password" id="password" />
+            <input type="email"  id="email" placeholder="Enter the valid Email id">
+            <input type="submit" value="Register">
+
+        </form>
+    </div>
+    
+
+
+
+    <script>
+     document.addEventListener('DOMContentLoaded',()=>{
+
+      const myform = document.getElementById("myform")
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      const email = document.getElementById("email").value;
+
+    myform.addEventListener('submit',(e)=>{
+   
+         
+        e.preventDefault();
+        const obj = {username:username,password:password,email:email}
+
+         const changedata =  JSON.stringify(obj);
+          //console.log(changedata);
+         localStorage.setItem('userdata',changedata)
+
+         alert("Succfully Register")
+
+         window.location.href = "login.html"
+
+         myform.reset()
+      
+         //console.log('Datas',obj.username,obj.password,obj.email);
+         
+    //   JSON.stringify  - change js object to json string.
+    //   JSON.parse(); - change json string to js object - need to use js process.
+
+    })
+
+
+
+     })
+      
+
+
+    </script>
+</body>
+</html>
